@@ -1,34 +1,21 @@
 #include<stdio.h>
-int is_pal(int);
 int main()
 {
-    int n;
+    int n,q,rem,rev=0;
     scanf("%d",&n);
-    if(is_pal(n))
+    q=n;
+    while(q!=0)
+    {
+        rem=q%10;
+        q=q/10;
+        rev=(rev*10)+rem;
+    }
+    if(rev==n)
     {
         printf("True");
     }
     else
     {
         printf("False");
-    }
-}
-int is_pal(int m)
-{
-    int q,r,s=0;
-    q=m;
-    while(q!=0)
-    {
-        r=q%10;
-        s=s*10+r;
-        q=q/10;
-    }
-    if(s==m)
-    {
-        return 1;
-    }
-    else
-    {
-        return 0;
     }
 }
