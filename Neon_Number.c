@@ -1,4 +1,4 @@
-# include<stdio.h>
+#include<stdio.h>
 int main()
 {
     int n,m,sn,s=0,r;
@@ -19,4 +19,6 @@ int main()
     {
         printf("Not Neon Number");
     }
+    
+    
 }
